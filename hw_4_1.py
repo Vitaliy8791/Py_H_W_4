@@ -7,7 +7,7 @@ fltterstr = whitespace + punctuation + digits
 
 def clear_word(enter_string, filt):  # функция проверяет текст на символы не из английского алфавита
     enter_char = []
-    enter_list = enter_string  # преобразовываем текст в список символов текста
+    enter_list = list(enter_string)  # преобразовываем текст в список символов текста
     for i in range(0, len(enter_list)):
         if enter_list[i] in filt:  # если символ в строке из специальных символов и символов пунктуации пропускаем его
             continue
