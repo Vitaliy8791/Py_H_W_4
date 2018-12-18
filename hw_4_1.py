@@ -35,9 +35,6 @@ try:
     enter_list = clear_word(text, fltterstr)  # вызываем функцию clear_word
     print("В тексте только специальные, английские символы и символы пунктуации!")
 
-
-
-
 except ValueError:  # выводим результат поиска
     print("В тексте найдены символы не из английскго алфавита!\n")
     bad_list, bad_num = bad_char(text)
