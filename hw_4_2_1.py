@@ -8,6 +8,7 @@ ascii_lettersflt = ascii_letters + " "
 
 
 def bad_char(text):  # функция проверяет текст на символы не из английского алфавита
+    text = text.lower()
     enter_list = list(text)
     for i in range(0, len(enter_list)):
         if enter_list[i] in filt2:  # пропускаем специальные символы и символы пунктуации
